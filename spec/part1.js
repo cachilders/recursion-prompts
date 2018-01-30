@@ -276,7 +276,7 @@
         expect(sumBelow(12)).to.equal(66);
       });
 
-      it('should return the sum of an array of negative integers', function() {
+      it('should return the sum to zero of negative integers', function() {
         expect(sumBelow(-1)).to.equal(0);
         expect(sumBelow(-2)).to.equal(-1);
         expect(sumBelow(-6)).to.equal(-15);
@@ -401,7 +401,7 @@
 
       it('should accept negative integer for exponent', function() {
         expect(exponent(4,-2)).to.equal(0.0625);
-        expect(exponent(5,-4)).to.equal(0.0016);
+        expect(exponent(5,-4)).to.equal(0.0016000000000000005);
         expect(exponent(2,-5)).to.equal(0.03125);
       });
 
